@@ -1,0 +1,39 @@
+{
+  "name": "fmihel-server-lib",
+  "version": "0.0.1",
+  "description": "server side functions on nodeJs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmihel/server-lib.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "server",
+    "express"
+  ],
+  "author": "fmihel76@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmihel/server-lib/issues"
+  },
+  "homepage": "https://github.com/fmihel/server-lib#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3",
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
+    "open": "^6.4.0"
+  }
+}
