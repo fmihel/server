@@ -54,7 +54,21 @@ function routerPaths(...root) {
     });
     return out;
 }
+/**
+ * Возвращает признак определен или нет аргумент в командной строке
+ * Ex for command:
+ *  npm webpack --prod
+ * In code :
+ * defArg('prod') or defArg('--prod')  -> true
+ * defArg('dev')                       -> false
+ *
+ * @param {string} name
+ */
+function defArg(name) {
+    return process.argv.find((a) => ((a === name) || (a === (`--${name}`)))) !== undefined;
+}
 
 module.exports = {
-    routerPaths
-}
+    routerPaths,
+    defArg,
+};
